@@ -1,4 +1,4 @@
-`UNION Injection` `Please REMOVE () Before Using the Commands`
+`UNION Injection`
 
 `To find if SQLi Vulnarablity is Present`
 ```
